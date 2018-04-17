@@ -22,6 +22,10 @@ app.newFormView = Backbone.View.extend({
 		
 		var newF = new app.singleForm({form: form, inst: [inst]});
 		formsGroup.add(newF);
+		
+		//this.$el.empty();
+		//this.unbind();
+		//$("#addNew").html(newFormView.render().el);
 		//alert(form);
 		
 	},

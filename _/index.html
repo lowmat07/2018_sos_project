@@ -9,15 +9,11 @@
 <body>
 
   <div class="main">
-    <div id="formNav"></div> <!-- END #formNav -->
+    <div id="formNav"></div>
     
-    
-    
-    <div id="addNew"></div><!-- #addNew -->
+    <div id="addNew"></div>
 
     <div id="allForms"></div>
-
-    <div id="copy"></div>
 
   </div>
   
@@ -47,8 +43,11 @@
   <script id="newForm" type="text/template">
   	<form action="" method="get">
   	  	<label for="formInput">New Form: <input type="text" name="formInput"></label>
-  			<label for="instInput">New Inst: <input type="text" name="instInput"></label>
-				<button class="addInst" type="button">Add Inst</button>
+  			<label for="instInput">New Inst: 
+					<input type="text" name="instInput">
+					<button class="addInst" type="button">+</button>
+				</label>
+				
   			<input type="submit" value="Submit">
   		</form>
   </script>

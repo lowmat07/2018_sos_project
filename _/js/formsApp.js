@@ -15,16 +15,3 @@ $("#allForms").html(formGroupView.render().el);
 $("#formNav").html(selectView.render().el);
 $("#addNew").html(newFormView.render().el);
 
-
-//formsGroup.add(seeWhatTheFatesHaveInStore);
-//formsGroup.remove(seeWhatTheFatesHaveInStore);
-
-//console.log(formsGroup.toJSON());
-
-/*
-console.log(seeHowItTurnsOut.toJSON());
-console.log(seeWhatGodWills.toJSON());
-console.log(seeWhatTheFatesHaveInStore.toJSON());
-*/
-
-//seeHowItTurnsOut.set('form', "see how it turns out 2");
