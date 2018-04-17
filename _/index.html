@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sayings Thesaurus</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="main">
+    <div id="formNav"></div> <!-- END #formNav -->
+    
+    
+    
+    <div id="addNew"></div><!-- #addNew -->
+
+    <div id="allForms"></div>
+
+    <div id="copy"></div>
+
+  </div>
+  
+  <script id="newFormBttn" type="text/template">
+		<button id="newForm">add form</button>
+  </script>
+  
+  <script id="fn" type="text/template">
+		<label for="choices">Choices: <select name="choices" id="choices"></select></label>
+		<button id="newForm">add form</button>
+  </script>
+  
+  <script id="selectOptions" type="text/template">
+  	<%= form %>
+  </script>
+
+  <script id="formDisplay" type="text/template">
+    <ul>
+      <li class="formInfo"><strong>Form:</strong> <%= form %></li>
+      <li class="formInfo"><strong>Inst:</strong> <% _.each(inst, function(i){ %>
+	  	 <button><%= i %></button>
+	  	 <% }) %>
+	  	</li>
+    </ul>
+  </script>
+  
+  <script id="newForm" type="text/template">
+  	<form action="" method="get">
+  	  	<label for="formInput">New Form: <input type="text" name="formInput"></label>
+  			<label for="instInput">New Inst: <input type="text" name="instInput"></label>
+				<button class="addInst" type="button">Add Inst</button>
+  			<input type="submit" value="Submit">
+  		</form>
+  </script>
+
+
+  <script src="js/libs/jquery.js"></script>
+  <script src="js/libs/underscore.js"></script>
+  <script src="js/libs/backbone.js"></script>
+  <script src="js/models/singleFormModel.js"></script>
+  <script src="js/views/singleFormView.js"></script>
+  <script src="js/views/allFormsView.js"></script>
+  <script src="js/views/optionFormView.js"></script>
+  <script src="js/views/newFormBttnView.js"></script>
+  <script src="js/views/newFormView.js"></script>
+  <script src="js/views/selectFormsView.js"></script>
+  <script src="js/collections/allForms.js"></script>
+  <script src="js/routes/router.js"></script>
+  <script src="js/formsApp.js"></script>
+</body>
+</html>
