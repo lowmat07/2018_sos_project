@@ -1,9 +1,0 @@
-﻿API:
-•	submit term
-•	Submit semantics for term 
-•	?add classifier for given term/semantics (decide classifiers as a list)
-•	
-•	query (retrieve semantics for given term)
-
-
-look up RSS apis
