@@ -36,22 +36,17 @@
       <li class="formInfo"><strong>Inst:</strong> <% _.each(inst, function(i){ %>
 	  	 <button><%= i %></button>
 	  	 <% }) %>
-		 <form action="" method="post">
-		 	<label for="instInput"><input name="instInput" type="text"></label>
-			<label for="addInst"><input name="addInst" class="addInst" type="submit" value="+"></label>
-		 </form>
 	  	</li>
     </ul>
   </script>
   
   <script id="newForm" type="text/template">
-  	<form class="input" action="" method="post">
+  	<form action="" method="get">
   	  	<label for="formInput">New Form: <input type="text" name="formInput"></label>
-  			<label for="instInput">New Inst:
-				<input type="text" name="instInput">
-				<button class="addInst" type="button">+</button>
-			</label>
-			<div id="newInsts" class="hide"></div>
+  			<label for="instInput">New Inst: 
+					<input type="text" name="instInput">
+					<button class="addInst" type="button">+</button>
+				</label>
 				
   			<input type="submit" value="Submit">
   		</form>
@@ -70,7 +65,6 @@
   <script src="js/views/selectFormsView.js"></script>
   <script src="js/collections/allForms.js"></script>
   <script src="js/routes/router.js"></script>
-  <script src="js/forms.json"></script>
   <script src="js/formsApp.js"></script>
 </body>
 </html>

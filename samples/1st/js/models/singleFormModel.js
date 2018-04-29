@@ -5,11 +5,11 @@ app.singleForm = Backbone.Model.extend({
 
 	defaults: {
 		form: "undefined",
-		inst: []
+		inst: "undefined"
 	}, //END defaults{}
 	
 	initialize: function() {
-		console.log("a model form named [" + this.get("form") + "] has been created. meanings: [" + this.get("inst") + "]");
+		console.log("a model form named [" + this.get("form") + "] has been created. it means [" + this.get("inst") + "]");
 		
 		/*
 		this.on('change', function(){
@@ -19,10 +19,6 @@ app.singleForm = Backbone.Model.extend({
 			console.log("The form for " + this.get("form") + " model just changed to " + this.get("inst"));
 		});
 		*/
-	}, //END initialize()
-	
-	addInst: function(i){
-		this.set({inst: this.attributes.inst.concat(i)});
-	}
+	} //END initialize()
 	
 });

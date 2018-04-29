@@ -13,19 +13,5 @@ app.singleFormView = Backbone.View.extend({
 		var formTemplate = this.template( this.model.toJSON() );
 		this.$el.html(formTemplate);
 		return this;
-	},
-	
-	addInst: function(i){
-		//console.log("singleFormView addInst");
-		instInput = this.$el.find('input[name=instInput]');
-		var curInst = instInput.val();
-		instInput.val('');
-		
-		this.model.addInst(curInst);
-		this.render();
-	},
-	
-	events: {
-		'click .addInst' : 'addInst'
 	}
 });

@@ -15,9 +15,5 @@ app.selectFormsView = Backbone.View.extend({
 	addOption: function(form){
 		var optionView = new app.optionFormView({ model: form });
 		this.$el.append(optionView.render().el);
-	},
-	
-	initialize: function(){
-		this.listenTo(this.collection, 'change', this.addOption);
-	}
+	}	
 });

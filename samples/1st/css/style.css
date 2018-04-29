@@ -385,9 +385,10 @@ pre {
   overflow: hidden;
 }
 
-.hide {
+.hidden {
 	display: none;
 }
+
 /* --------------------------------- */
 .main {
 	text-align: left;
@@ -399,16 +400,11 @@ pre {
 	background: #fff;
 }
 
-form{
-	display: inline-block;
-}
-
 .formItem ul {
 	list-style-type: none;
 	padding-left: 0;
 }
 
-form.input > label {
+form > label {
 	display: block;
 }
-
