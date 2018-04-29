@@ -2,5 +2,7 @@
 var app = app || {};
 
 app.FormsCollection = Backbone.Collection.extend({
-	model: app.singleForm
+	model: app.singleForm//,
+	
+	//localStorage: new Backbone.LocalStorage("formsCollection")
 });

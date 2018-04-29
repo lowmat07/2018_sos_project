@@ -3,6 +3,11 @@ var whatsup = new app.singleForm({
 	inst: ["hello", "what's wrong", "what are you doing", "how are you"]
 });
 
+/*var formsGroup = new app.FormsCollection();
+formsGroup.fetch();
+formsGroup.add(whatsup);
+whatsup.save();*/
+
 var formsGroup = new app.FormsCollection([
 		whatsup
 ]);
