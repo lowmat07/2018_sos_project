@@ -2,6 +2,9 @@
 var app = app || {};
 
 app.singleForm = Backbone.Model.extend({
+	
+	//localStorage: new Backbone.LocalStorage('singleForm'),
+	idAttribute: "form",
 
 	defaults: {
 		form: "undefined",

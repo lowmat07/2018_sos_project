@@ -1,4 +1,7 @@
-[
+// Namespace our app
+var app = app || {};
+
+app.jsonForms = [
   {
     "form": "what's up",
     "inst": [
@@ -8,4 +11,4 @@
       "how are you"
     ]
   }
-]
+];
