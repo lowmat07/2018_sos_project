@@ -25,14 +25,7 @@ app.singleFormView = Backbone.View.extend({
 		this.render();
 	},
 	
-	viewForm: function(e){
-		console.log(e);
-		router.navigate("form/"+e.target.innerHTML, {trigger: true});
-		//e.innerHTML
-	},
-	
 	events: {
-		"click .addInst" : "addInst",
-		"click button" : "viewForm"
+		'click .addInst' : 'addInst'
 	}
 });

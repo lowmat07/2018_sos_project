@@ -29,7 +29,7 @@ formsGroup.on("add", function(it){
 formsGroup.fetch();
 //formsGroup.add(whatsup);
 $.getJSON("js/forms.json", function(data){
-	//console.log("inside getJSON");
+	console.log("inside getJSON");
 	$.each( data, function( key, val ){
 		formsGroup.add(val);
 	});
@@ -41,7 +41,7 @@ $.getJSON("js/forms.json", function(data){
 //formsGroup.sync();
 
 
-/*var formGroupView = new app.allFormsView({ collection: formsGroup });
+var formGroupView = new app.allFormsView({ collection: formsGroup });
 //formsGroup.add(whatsup);
 //formsGroup.fetch();
 var selectView = new app.selectFormsView({ collection: formsGroup });
@@ -50,5 +50,5 @@ var newFormView = new app.newFormBttnView();
 
 $("#allForms").html(formGroupView.render().el);
 $("#formNav").html(selectView.render().el);
-$("#addNew").html(newFormView.render().el);*/
+$("#addNew").html(newFormView.render().el);
 
